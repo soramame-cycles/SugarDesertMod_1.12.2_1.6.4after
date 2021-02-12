@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "sugard:items/sugar_diamond_axe"
+  }
+}

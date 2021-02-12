@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=up": { "model": "sugard:sugar_torch" },
+        "facing=east": { "model": "sugard:sugar_torch_wall" },
+        "facing=south": { "model": "sugard:sugar_torch_wall", "y": 90 },
+        "facing=west": { "model": "sugard:sugar_torch_wall", "y": 180 },
+        "facing=north": { "model": "sugard:sugar_torch_wall", "y": 270 }
+    }
+}

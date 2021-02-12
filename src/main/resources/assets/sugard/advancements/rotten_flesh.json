@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "title": {
+            "translate": "advancements.sugard.rotten_flesh.title"
+        },
+        "description": {
+            "translate": "advancements.sugard.rotten_flesh.description"
+        }
+    },
+    "parent": "sugard:root",
+    "criteria": {
+        "get_rotten_flesh": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items":[
+                    {
+                        "item": "sugard:rotten_flesh_block"
+                    }
+]
+            }
+        }
+    }
+
+}
