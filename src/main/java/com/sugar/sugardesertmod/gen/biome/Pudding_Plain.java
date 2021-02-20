@@ -57,6 +57,6 @@ public class Pudding_Plain extends Biome{
 
 	@Override
 	public float getSpawningChance() {
-		return 0.15F;
+		return 0.035F;
 	}
 }

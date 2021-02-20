@@ -14,11 +14,13 @@ public class ModBiome {
 	public static Biome Suger_Desert = new Sugar_Desert();
 	public static Biome PuddingPlain = new Pudding_Plain();
 	public static Biome Sugar_Forest = new Sugar_Forest();
+	public static Biome IceCandy_Spike = new IceCandy_Spike();
 
 	public static void registerBiomes(IForgeRegistry<Biome> registry) {
 		registry.register(Suger_Desert);
 		registry.register(PuddingPlain);
 		registry.register(Sugar_Forest);
+		registry.register(IceCandy_Spike);
 	}
 
 	public static void registerBiomeTypes() {
@@ -37,10 +39,17 @@ public class ModBiome {
 		ForgeRegistries.BIOMES.register(PuddingPlain);
 
 		//Sugar_Forst
-		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(Sugar_Forest,10));
+		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(Sugar_Forest,9));
 		BiomeManager.addSpawnBiome(Sugar_Forest);
 		BiomeManager.addStrongholdBiome(Sugar_Forest);
 		BiomeDictionary.addTypes(Sugar_Forest, Type.FOREST);
 		ForgeRegistries.BIOMES.register(Sugar_Forest);
+
+		//IceCandy_Spike
+		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(IceCandy_Spike,8));
+		BiomeManager.addSpawnBiome(IceCandy_Spike);
+		BiomeManager.addStrongholdBiome(IceCandy_Spike);
+		BiomeDictionary.addTypes(IceCandy_Spike, Type.PLAINS);
+		ForgeRegistries.BIOMES.register(IceCandy_Spike);
 	}
 }

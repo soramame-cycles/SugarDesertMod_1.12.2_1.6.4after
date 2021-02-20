@@ -22,6 +22,5 @@ public class RottenFleshBlock extends Block {
 
 	public RottenFleshBlock(Material materialIn) {
 		super(materialIn);
-		// TODO 自動生成されたコンストラクター・スタブ
 	}
 }

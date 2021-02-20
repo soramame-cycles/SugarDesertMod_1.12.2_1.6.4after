@@ -33,5 +33,22 @@ public class OreDictionaryHandler {
 		net.minecraftforge.oredict.OreDictionary.registerOre("anko", SDItem.Azuki_been_bun);
 		net.minecraftforge.oredict.OreDictionary.registerOre("anpan", SDItem.Azuki_been_bun);
 		net.minecraftforge.oredict.OreDictionary.registerOre("pudding", SDItem.Pudding);
+		/**Dye*/
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeWhite", SugarDBlock.IceCandy_block);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeOrange", SugarDBlock.IceCandy_block1);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeMagenta", SugarDBlock.IceCandy_block2);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeLightBlue", SugarDBlock.IceCandy_block3);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeYellow", SugarDBlock.IceCandy_block4);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeLime", SugarDBlock.IceCandy_block5);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyePink", SugarDBlock.IceCandy_block6);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeGray", SugarDBlock.IceCandy_block7);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeLightGray", SugarDBlock.IceCandy_block8);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeCyan", SugarDBlock.IceCandy_block9);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyePurple", SugarDBlock.IceCandy_block10);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeBlue", SugarDBlock.IceCandy_block11);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeBrown", SugarDBlock.IceCandy_block12);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeGreen", SugarDBlock.IceCandy_block13);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeRed", SugarDBlock.IceCandy_block14);
+		net.minecraftforge.oredict.OreDictionary.registerOre("dyeBlack", SugarDBlock.IceCandy_block15);
 	}
 }

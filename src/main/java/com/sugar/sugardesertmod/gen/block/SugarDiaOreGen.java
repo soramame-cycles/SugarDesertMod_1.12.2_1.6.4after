@@ -43,7 +43,7 @@ public class SugarDiaOreGen implements IWorldGenerator{
 		}
 	}
 
-	private void runGenerator(WorldGenerator gen,World world, Random rand,int chunkX,int chunkZ,int chance) {;
+	private void runGenerator(WorldGenerator gen,World world, Random rand,int chunkX,int chunkZ,int chance) {
 
 		for (int i = 0; i < 10; i++) {
 			int x = chunkX * 16 + rand.nextInt(16);
