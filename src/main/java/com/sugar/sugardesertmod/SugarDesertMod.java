@@ -1,18 +1,14 @@
 package com.sugar.sugardesertmod;
 
-import java.util.logging.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 
 import com.sugar.sugardesertmod.gen.biome.ModBiome;
-import com.sugar.sugardesertmod.gen.block.BismuthOreGen;
-import com.sugar.sugardesertmod.gen.block.EndDiaGen;
-import com.sugar.sugardesertmod.gen.block.NetherDiaGen;
-import com.sugar.sugardesertmod.gen.block.SugarBlockGen;
-import com.sugar.sugardesertmod.gen.block.SugarDiaOreGen;
-import com.sugar.sugardesertmod.handlers.OreDictionaryHandler;
 import com.sugar.sugardesertmod.init.block.SugarDBlock;
 import com.sugar.sugardesertmod.init.item.SDItem;
 import com.sugar.sugardesertmod.init.tool.SugarDTools;
-import com.sugar.sugardesertmod.recipes.SmeltingSugarD;
+import com.sugar.sugardesertmod.proxy.CommonProxy;
 import com.sugar.sugardesertmod.tab.CreativeTabsSugarD;
 
 import net.minecraft.block.Block;
@@ -23,12 +19,12 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLConstructionEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -38,18 +34,25 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class SugarDesertMod {
 	public static final String MOD_ID = "sugard";
 	public static final String MOD_NAME = "SugerDesertmod";
-	public static final String MOD_VERSION = "1.6.3";
+	public static final String MOD_VERSION = "1.7.0";
+
 	public static CreativeTabsSugarD Tab_sugard = new CreativeTabsSugarD();
 
-	public static Logger logger;
+
 
 	@Instance(MOD_ID)
 	public static SugarDesertMod instance;
 
+	@SidedProxy(clientSide = "com.sugar.sugardesertmod.proxy.ClientProxy", serverSide = "com.sugar.sugardesertmod.proxy.CommonProxy")
+	public static CommonProxy proxy;
+
+
+	public static final Logger LOGGER = (Logger) LogManager.getLogger(MOD_ID);
+
 	@Mod.EventHandler
 	//最初に処理をしたいものをここにいれる
 	public void preinit(FMLPreInitializationEvent event) {
-
+		proxy.preinit(event);
 	}
 
 	@Mod.EventHandler
@@ -61,14 +64,8 @@ public class SugarDesertMod {
 	@Mod.EventHandler
 	//preInitの次に読み込ませたいもの
 	public void init(FMLInitializationEvent event) {
-		GameRegistry.registerWorldGenerator(new BismuthOreGen(), 0);
-		GameRegistry.registerWorldGenerator(new SugarBlockGen(), 0);
-		GameRegistry.registerWorldGenerator(new SugarDiaOreGen(),0);
-		GameRegistry.registerWorldGenerator(new NetherDiaGen(), 0);
-		GameRegistry.registerWorldGenerator(new EndDiaGen(), 0);
-		ModBiome.registerBiomeTypes();
-		SmeltingSugarD.register();
-		OreDictionaryHandler.registerOreDictionary();
+		proxy.init(event);
+
 	}
 
 	@SubscribeEvent
@@ -117,6 +114,6 @@ public class SugarDesertMod {
 	@Mod.EventHandler
 	//一番最後に処理したいもの
 	public void postInit(FMLPostInitializationEvent event) {
-
+		proxy.postInit(event);
 	}
 }

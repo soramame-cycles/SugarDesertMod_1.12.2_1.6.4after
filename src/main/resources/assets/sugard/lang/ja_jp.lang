@@ -73,6 +73,9 @@ tile.red_icecandy_block.name=赤色のアイス
 tile.black_icecandy_block.name=黒色のアイス
 tile.lit_raw_sugar_block.name=きらめく黒糖ブロック
 
+entity.Ding.name=ディング
+entity.Cowramel.name=カウラメル
+
 tooltip.can_eat_wolf=オオカミと一緒に食べられます！
 tooltip.can_eat_wolf_and_maid=メイドさんとオオカミと一緒に食べられます！
 
@@ -95,5 +98,15 @@ sugard.config.bismuth_gen=ビスマスの生成
 sugard.config.sugar_block_gen="砂"糖の生成
 sugard.config.add_recipe=レシピ追加
 sugard.config.bismuth_smelting=ビスマスの精錬レシピ
+
+sugard.entity.ding.ambient=ディングが鳴く
+sugard.entity.ding.hurt=ディングがダメージを受ける
+sugard.entity.ding.death=ディングが死ぬ
+sugard.entity.ding.step=ディングが歩く
+sugard.entity.cowramel.ambient=カウラメルが鳴く
+sugard.entity.cowramel.hurt=カウラメルがダメージを受ける
+sugard.entity.cowramel.death=カウラメルが死ぬ
+sugard.entity.cowramel.step=カウラメルが歩く
+sugard.entity.cowramel.milk=カウラメルの乳を搾る
 
 itemGroup.SugarD_tabs=SugarD
