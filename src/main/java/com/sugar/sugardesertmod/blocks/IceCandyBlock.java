@@ -8,6 +8,7 @@ import net.minecraft.block.material.Material;
 
 public class IceCandyBlock extends Block{
 
+	@SuppressWarnings("deprecation")
 	public IceCandyBlock(String name) {
 		super(Material.GLASS);
 		this.setHardness(0.5F);
@@ -18,6 +19,7 @@ public class IceCandyBlock extends Block{
 		this.setCreativeTab(SugarDesertMod.Tab_sugard);
 		this.setSoundType(SoundType.GLASS);
 		this.setLightLevel(0.4F);
+		this.slipperiness = 0.989F;
 	}
 
 }

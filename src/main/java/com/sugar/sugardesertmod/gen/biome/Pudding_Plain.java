@@ -6,8 +6,6 @@ import com.sugar.sugardesertmod.init.block.SugarDBlock;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.monster.EntitySlime;
-import net.minecraft.entity.passive.EntityChicken;
-import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.ChunkPrimer;
@@ -50,9 +48,14 @@ public class Pudding_Plain extends Biome{
 		spawnableWaterCreatureList.clear();
 		spawnableCaveCreatureList.clear();
 
-		spawnableCreatureList.add(new Biome.SpawnListEntry(EntityCow.class, 1, 1, 2));
-		spawnableCreatureList.add(new Biome.SpawnListEntry(EntityChicken.class,1, 1, 2));
-		spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySlime.class,1,1,2));
+		//spawnableCreatureList.add(new Biome.SpawnListEntry(EntityCow.class,7,2,4));
+		//spawnableCreatureList.add(new Biome.SpawnListEntry(EntityChicken.class,8,2,4));
+		//spawnableCreatureList.add(new Biome.SpawnListEntry(EntityCowramel.class,8,2,4));
+		//spawnableCreatureList.add(new Biome.SpawnListEntry(EntityDing.class,9,2,4));
+		spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySlime.class,10,1,2));
+		//spawnableCreatureList.add(new Biome.SpawnListEntry(EntityCowramel.class, 60, 20, 100));
+		//spawnableCreatureList.add(new Biome.SpawnListEntry(EntityDing.class,60,20,40));
+
 	}
 
 	@Override

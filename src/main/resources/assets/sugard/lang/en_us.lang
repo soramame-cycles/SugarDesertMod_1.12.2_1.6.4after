@@ -73,6 +73,9 @@ tile.red_icecandy_block.name=red_icecandy_block
 tile.black_icecandy_block.name=black_icecandy_block
 tile.lit_raw_sugar_block.name=lit_raw_sugar_block
 
+entity.Ding.name=Ding
+entity.Cowramel.name=Cowramel
+
 tooltip.can_eat_wolf=You can eat it with the wolf!
 tooltip.can_eat_wolf_and_maid=You can eat it with a maid and a wolf!
 
@@ -95,5 +98,15 @@ sugard.config.bismuth_gen=Bismuth Gen
 sugard.config.sugar_block_gen=Sugar_Block Gen
 sugard.config.add_recipe=Add Recipe
 sugard.config.bismuth_smelting=Bismuth Smelting
+
+sugard.entity.ding.ambient=Ding awo
+sugard.entity.ding.hurt=Ding hurt
+sugard.entity.ding.death=Ding death
+sugard.entity.ding.step=Ding step
+sugard.entity.cowramel.ambient=Cowramel moo
+sugard.entity.cowramel.hurt=Cowramel hurt
+sugard.entity.cowramel.death=Cowramel death
+sugard.entity.cowramel.step=Cowramel step
+sugard.entity.cowramel.milk=Cowramel gets milked
 
 itemGroup.SugarD_tabs=SugarD
